@@ -29,9 +29,10 @@ public class Loginfrm extends JFrame {
         jbLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(jtfID.getText().equals("104021097") && (new String(jPw.getPassword())).equals("123456789")){
+                if(jtfID.getText().equals("h304") && (new String(jPw.getPassword())).equals("23323456")){
                     Calculator calfrm = new Calculator();
                     calfrm.setVisible(true);
+                    Loginfrm.this.setVisible(false);
                 }else{
                     JOptionPane.showMessageDialog(Loginfrm.this,"ERROR");
                 }
